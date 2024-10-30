@@ -1,0 +1,1291 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+body {
+	background: $color-seashell;
+}
+
+#screen-meta-links {
+	display: none;
+}
+
+.geolocation-add-container .button-primary {
+	margin-left: 8%;
+	margin-top: 5px;
+}
+
+.conditional-tabs .tab {
+	border-bottom: 0;
+	cursor: pointer;
+	line-height: 20px;
+	padding: 15px;
+
+	span[class^="icon-osdxpi-"] {
+		color: $color-blue-gem;
+		font-size: 20px;
+		margin-right: 3px;
+		position: relative;
+		top: 4px;
+	}
+}
+
+.deviceinstructions {
+	margin-top: 0;
+}
+
+@media (min-width: 1200px) {
+	.devices-container {
+		margin-top: -15px;
+	}
+}
+
+.rule-wrap {
+	select:not([multiple]) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1"><path d="M4 8L0 4h8z"/></svg>');
+		background-position: right 50%;
+		background-repeat: no-repeat;
+		border-radius: 0;
+		height: auto;
+		padding-right: 1.5em;
+		padding: .3em .4em;
+	}
+
+	input[type="text"] {
+		border-radius: 0;
+		height: auto;
+		padding: .5em;
+	}
+
+	.right-settings {
+		border-left: 1px solid $color-seashell;
+		padding-bottom: 45px;
+
+		@media (min-width: 991px) {
+			select,
+			input,
+			textarea,
+			pre.cf-cc-dynamic-link-code {
+				max-width: 350px;
+			}
+		}
+	}
+}
+
+.left-tabs .condition-label {
+	font-weight: bold;
+	padding: 15px;
+}
+
+.right-settings .condition-label {
+	font-weight: bold;
+	padding: 15px 0;
+}
+
+.conditional-tabs {
+	&.Device div[data-trigger="Device"], &.User-Behavior div[data-trigger="User-Behavior"], &.referrer div[data-trigger="referrer"], &.url div[data-trigger="url"], &.Time-Date div[data-trigger="Time-Date"], &.PageVisit div[data-trigger="PageVisit"], &.Geolocation div[data-trigger="Geolocation"] , &.custom div[data-trigger="custom"] {
+		background: $color-kingfisher-daisy;
+		color: $color-white;
+	}
+
+	&.Device div[data-trigger="Device"] span[class^="icon-osdxpi-"], &.User-Behavior div[data-trigger="User-Behavior"] span[class^="icon-osdxpi-"], &.referrer div[data-trigger="referrer"] span[class^="icon-osdxpi-"], &.url div[data-trigger="url"] span[class^="icon-osdxpi-"], &.Time-Date div[data-trigger="Time-Date"] span[class^="icon-osdxpi-"], &.PageVisit div[data-trigger="PageVisit"] span[class^="icon-osdxpi-"], &.Geolocation div[data-trigger="Geolocation"] span[class^="icon-osdxpi-"], &.custom div[data-trigger="custom"] span[class^="icon-osdxpi-"] {
+		color: $color-white;
+	}
+}
+
+.cf-cc-versions-sortable {
+	margin: 0;
+
+	.rule-item {
+		margin: 0;
+	}
+}
+
+#cf_cc_condition_metabox {
+	/* Added !important to fix collisions with other plugins. */
+	display: block !important;
+
+	.inside {
+		margin: 0;
+		padding: 0;
+		position: relative;
+
+		.need-help-link {
+			bottom: 0;
+			padding-left: 15px;
+			position: absolute;
+			right: 30px;
+			text-align: right;
+		}
+	}
+}
+
+.post-type-cf_cc_condition #edit-slug-box {
+	display: none;
+}
+
+.query-string-code {
+	padding: 11px 6px;
+	margin: 10px 0 10px;
+}
+
+.wp-editor-area {
+	min-height: 270px;
+}
+
+.default-rule-wrap {
+	padding: 10px 0 20px 0 !important;
+}
+
+.license-tbl {
+	background: white;
+	border-bottom: 1px solid $color-concrete;
+}
+
+.cf-cc-settings-tbl {
+	width: auto !important;
+}
+
+.cf-cc_setting_page_option_number_select {
+	height: 28px;
+	position: relative;
+	top: 3px;
+}
+
+.license-tbl tbody {
+	display: block;
+	padding: 10px;
+}
+
+.license_expires_message {
+	padding: 15px 10px;
+}
+
+.no_license_message {
+	background: linear-gradient(135deg, $color-cornflower-blue 0%, $color-dodger-blue 100%);
+	color: $color-white;
+	display: block;
+	font-size: 1.2em;
+	margin: 10px 0;
+	padding: 16px 10px;
+	text-align: left;
+}
+
+.licenseTable {
+	padding: 20px 10px 20px 20px !important;
+	width: 130px !important;
+}
+
+.cf-cc-settings-td {
+	padding: 20px 10px 20px 20px !important;
+	vertical-align: baseline !important;
+}
+
+.approved_license_message {
+	background-color: $color-chateau-green;
+	border: 1px solid $color-mercury;
+	color: white;
+	font-size: 14px;
+	margin-top: 10px;
+	padding: 7px;
+}
+
+.contact-us-mail {
+	color: $color-cerulean;
+	font-weight: bold;
+}
+
+.helper-metabox-container {
+	font-size: 1em;
+	padding: 10px 0;
+}
+
+.cf-cc-helper-metabox-doc {
+	list-style-position: inside;
+	list-style: unset;
+	margin-top: 0;
+
+	li {
+		margin-bottom: 2px;
+	}
+}
+
+.cf-cc-content-head {
+	font-weight: bold;
+}
+
+#cf_cc_condition_metabox {
+	border: none;
+}
+
+.get-license {
+	background: $color-cornflower-blue;
+	background: linear-gradient(135deg, $color-cornflower-blue 0%, $color-dodger-blue 100%);
+	color: $color-white;
+	display: block;
+	font-size: 1.05em;
+	margin-top: 20px;
+	padding: 10px 10px;
+	text-align: left;
+
+	.text {
+		float: left;
+		padding: 7px;
+		vertical-align: middle;
+	}
+}
+
+.get-license-btn {
+	background: $color-equator;
+	background: linear-gradient(0deg, $color-equator 0%, $color-rob-roy 100%);
+	border: 1px solid $color-seashell;
+	color: white;
+	float: right;
+	font-size: 0.9em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-left: 20px;
+	padding: 8px 15px;
+	text-align: center;
+	text-decoration: none;
+	width: 244px;
+}
+
+.analytics-reset-all-wrapper {
+	color: $color-cerulean;
+	cursor: pointer;
+	font-size: 0.8em;
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+.reset-all-views-count {
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover {
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+
+.get-license-btn {
+	&:hover {
+		color: white;
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: $color-white;
+		text-decoration: none;
+	}
+
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+.versioninstructions {
+	margin-bottom: 2.5em;
+}
+
+.repeater-template, .reapeater-item-cloned {
+	display: none;
+}
+
+.reapeater-item-cloned-loaded {
+	display: block;
+}
+
+.rule-wrap .cf-cc-form-group .device-container {
+	margin: 5px 0;
+
+	label {
+		font-weight: normal;
+	}
+}
+
+input.form-control.deviceformcontrol {
+	margin: 0 3px 3px;
+	min-width: 10px;
+}
+
+#wp-trigger-default-wrap {
+	margin-top: 20px;
+}
+
+.submit-btn-wrap {
+	margin-left: 0.8em;
+
+	input {
+		vertical-align: middle !important;
+	}
+}
+
+.rule-item {
+	&:nth-child(odd) {
+		background: $color-white;
+	}
+
+	&:nth-child(even) {
+		background: $color-alabaster;
+	}
+}
+
+.rule-item .instructions {
+	border-radius: 5px;
+	background: transparent;
+	margin-bottom: 10px;
+	padding: 0.5em 0;
+
+	p {
+		margin: 5px 2px;
+	}
+}
+
+/* Schedule */
+
+.schedule-header th {
+	font-size: 11px;
+	min-width: 27px;
+}
+
+.cfdatetimepicker {
+	padding-left: 32px;
+	padding-top: 8px;
+}
+
+.pick-date-container {
+	margin-bottom: 10px;
+	position: relative;
+	width: 100%;
+
+	&:before {
+		color: $color-shuttle-gray;
+		content: "\f508";
+		font-size: 20px;
+		font-family: dashicons;
+		left: 9px;
+		position: absolute;
+		top: 6px;
+	}
+}
+
+.settimeinstructions {
+	background: $color-white-ice;
+	border: 1px solid $color-chateau-green;
+	color: $color-chateau-green;
+	float: left;
+}
+
+.closeX {
+	border-color: $color-chateau-green;
+	border-style: solid;
+	border-width: 0 0 1px 1px;
+	cursor: pointer;
+	float: right;
+	font-size: 12px;
+	line-height: 10px;
+	padding: 2px;
+}
+
+.settimeinstructions {
+	p {
+		margin: 0;
+		padding: 7px 10px;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+.show-selection {
+	display: block;
+}
+
+@media (min-width: 991px) {
+	.rule-wrap {
+		border: 0;
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.instructionabovefield {
+	margin: 1em 0 0.4em;
+}
+
+.rule-wrap {
+	h3 {
+		color: $color-shuttle-gray;
+		font-size: 1.5em;
+		font-weight: 400;
+		line-height: 1.3em;
+
+		&:before {
+			margin-left: 1em;
+		}
+	}
+
+	@media (min-width: 991px) {
+		.left-tabs {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.version-count {
+	background: $color-mercury;
+	border-radius: 50%;
+	color: $color-black;
+	font-size: 0.9em;
+	margin-right: 1em;
+	padding: 0.2em 0.5em;
+	white-space: nowrap;
+}
+
+.version-alpha {
+	color: $color-cyprus;
+	font-weight: bold;
+}
+
+.btn-delete {
+	background-color: transparent;
+	border-left: 1px solid $color-iron;
+	border-radius: 0;
+	border: none;
+	color: $color-rolling-stone;
+	float: right;
+	padding: 1.3em 1.6em 1.1em;
+	transition: all 200ms ease-in-out 0s;
+
+	i {
+		font-size: 1.5em;
+	}
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.05);
+		color: $color-trout;
+	}
+}
+
+.cf-cc-btn-drag {
+	background-color: transparent;
+	border-left: 1px solid $color-iron;
+	border-radius: 0;
+	border: none;
+	color: $color-rolling-stone;
+	float: right;
+	padding: 1.31em 1.6em;
+	transition: all 200ms ease-in-out 0s;
+}
+
+.highlighted {
+	color: $color-cornflower-blue;
+}
+
+.btn-add {
+	background: transparent;
+	border: none;
+	color: $color-cyprus;
+	font-size: 1.4em;
+	transition: all 200ms ease-in-out 0s;
+
+	&:hover {
+		color: $color-turquoise;
+	}
+}
+
+.submit-bottom-wrap {
+	padding: 2em 0;
+	text-align: center;
+
+	.reminder {
+		font-size: 1.5em;
+	}
+
+	.submit {
+		float: none !important;
+		text-align: center;
+	}
+}
+
+.rule-item {
+	select, input {
+		margin-bottom: 0;
+	}
+}
+
+.instructions {
+	pre code {
+		font-size: 0.9em;
+	}
+
+	code b {
+		color: $color-turquoise;
+	}
+}
+
+.wysiwyg-not-valid {
+	border: 1px solid;
+	color: red;
+}
+
+.html-active .switch-html-cloned, .tmce-active .switch-tmce-cloned {
+	background: $color-wild-sand;
+	border-bottom-color: $color-wild-sand;
+	color: $color-emperor;
+}
+
+.php-shortcode-toggle-wrap {
+	display: none;
+}
+
+.php-shortcode-toggle-link {
+	color: $color-cerulean;
+	cursor: pointer;
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
+.query-string-err-notification {
+	border: 1px solid red;
+	color: red;
+	margin-top: 10px;
+	padding: 0.2em 0.6em;
+	text-align: left;
+}
+
+.cf-cc-pages-visited-settings-explain {
+	font-size: 12px;
+	.dashicons-edit {
+		width: 12px;
+		height: 12px;
+		font-size: 12px;
+	}
+}
+
+tr.type-cf_cc_condition .column-trigger {
+	direction: ltr;
+}
+
+/* fix for polylang plugin */
+
+th[class*=" column-language_"] {
+	width: 2.2% !important;
+}
+
+.initial-instructions {
+	background: $color-cyprus;
+	border-bottom: 1px solid rgb(198, 198, 198);
+	border-left: 2px solid #27BADD;
+	border-radius: 3px;
+	border-right: 1px solid rgb(198, 198, 198);
+	border-top: 1px solid rgb(198, 198, 198);
+	color: $color-white;
+	padding: 8px 14px;
+
+	b {
+		background: #2ab7d9;
+		border-radius: 50%;
+		font-size: 11px;
+		margin: 0 2px;
+		padding: 2px 6px;
+	}
+}
+
+.ab-testing-custom {
+	height: 28px;
+}
+
+.default-repeater-item {
+	background: $color-white !important;
+	position: relative;
+}
+
+.reapeater-item {
+	position: relative;
+}
+
+/* Begin Testing Mode Section CSS */
+
+@keyframes flicker {
+	from {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0.5;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	75% {
+		opacity: 0.5;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+.cf-cc-tm-section {
+	float: right;
+	margin-top: 10px;
+	width: 100%;
+
+	.circle {
+		background: $color-alabaster;
+		border: 1px solid #a9a9a9;
+		cursor: pointer;
+		float: right;
+		height: 10px;
+		margin-top: 5px;
+		width: 10px;
+	}
+
+	.circle-active {
+		background: #27cc52;
+		border-radius: 50%;
+	}
+
+	.text {
+		float: right;
+		margin-left: 5px;
+		margin-top: 2px;
+	}
+}
+
+.cf-cc-tm-overlay {
+	background: rgba(245, 245, 245, 0.67);
+	height: 100%;
+	left: 0;
+	line-height: 100%;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+
+	.text {
+		background: #fbfbfb;
+		border: 2px solid #d44f2f;
+		color: #d05033;
+		font-size: 16px;
+		font-weight: bold;
+		left: 50%;
+		margin-right: -50%;
+		margin: 0;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.cf-cc-draggable-icon {
+	transform: rotate(45deg);
+}
+
+.cf-cc-tm-section .tm-tip {
+	background: #565e67;
+	border-radius: 50%;
+	color: $color-white;
+	cursor: default;
+	display: block;
+	float: right;
+	font-size: 9px;
+	line-height: 14px;
+	margin-left: 5px;
+	margin-top: 4px;
+	padding: 0 5px;
+	text-decoration: none;
+}
+
+.cf-cc-tip {
+	border-radius: 50%;
+	border: 1px solid #337ab7;
+	font-size: 0.8em;
+	margin-left: 5px;
+	padding: 1px 4px 0;
+	text-decoration: none;
+
+	&:hover, &:focus, &:visited, &:active {
+		border-radius: 50%;
+		border: 1px solid #337ab7;
+		font-size: 0.8em;
+		margin-left: 5px;
+		padding: 1px 4px 0;
+		text-decoration: none;
+	}
+}
+
+.cf-cc-tipGrey {
+	border-radius: 50%;
+	border: 1px solid #929292;
+	color: #929292;
+	font-size: 0.7em;
+	margin-left: 5px;
+	padding: 1px 3.8px 1px;
+	text-decoration: none;
+
+	&:hover, &:focus, &:visited, &:active {
+		border-radius: 50%;
+		border: 1px solid #929292;
+		color: #929292;
+		font-size: 0.7em;
+		margin-left: 5px;
+		padding: 1px 3.8px 1px;
+		text-decoration: none;
+	}
+}
+
+.line-tooltip {
+	text-decoration: underline dotted #666;
+}
+
+.general-tool-tip {
+	border-radius: 50%;
+	border: 1px solid #a2a2a2;
+	bottom: 1px;
+	color: #a2a2a2;
+	font-size: 7px;
+	line-height: 10px;
+	margin: 3px 5px;
+	padding: 1px 3.5px;
+	position: relative;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+		color: none;
+	}
+}
+
+.query-example {
+	color: #a2a2a2;
+	font-size: 12px;
+}
+
+/* End Testing Mode Section CSS */
+
+/* Time & Date */
+
+.cf-cc-start-at-date, .cf-cc-end-at-date {
+	margin-bottom: -8px;
+}
+
+.schedule-rows td {
+	background-color: #eee;
+	border: 1px solid #d3d3d3;
+	cursor: pointer;
+	height: 10px;
+	line-height: 10px;
+	margin: 3px;
+	padding: 5px;
+	width: 80px;
+
+	&:first-child {
+		background-color: transparent;
+		border-top: 1px dashed #c3c3c3;
+		border: 0;
+		font-size: 10px;
+		padding: 0 4px 0 0;
+		position: relative;
+		text-align: left;
+		top: -5px;
+		width: 0px;
+	}
+
+	&[data-selected], &[data-selecting] {
+		background-color: #27badd;
+	}
+
+	&[data-disabled] {
+		opacity: 0.55;
+	}
+}
+
+/* License Styles */
+
+.locked-condition-box-container {
+	float: left;
+	margin-bottom: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.locked-condition-box {
+	background-color: #cdecc9;
+	border: 1px solid #82ca9c;
+	padding: 10px;
+
+	.unlock-button {
+		background-color: #82ca9c;
+		border-radius: 15px;
+		color: white;
+		display: inline-block;
+		margin-top: 10px;
+		padding: 4px 20px;
+	}
+}
+
+span.description {
+	color: red;
+	font-size: 14px;
+	font-style: italic;
+	margin: 10px;
+}
+
+/* Google Places API */
+
+.locationField, #controls {
+	position: relative;
+}
+
+.autocomplete {
+	left: 10px;
+	position: absolute;
+	top: 0;
+
+	/* 0 */
+	width: 81%;
+
+	/* 85% */
+}
+
+.remove-autocomplete {
+	background: none;
+	border: none;
+	color: #d25134;
+	line-height: 23px;
+}
+
+.specific-location {
+	color: #0073aa;
+	display: inline-block;
+	word-wrap: break-word;
+}
+
+.map-marker-near-input {
+	color: $color-shuttle-gray;
+	margin-right: 3px;
+}
+
+.geolocation-add-btn {
+	background: none;
+	border: none;
+	color: $color-turquoise;
+}
+
+.label {
+	color: #303030;
+	font-weight: bold;
+	text-align: right;
+	width: 100px;
+}
+
+.field {
+	width: 99%;
+}
+
+.slimField {
+	width: 80px;
+}
+
+.wideField {
+	width: 200px;
+}
+
+.locationField {
+	/*height: 30px;*/
+	margin-bottom: 2px;
+
+	.autocomplete {
+		font-size: 10px;
+	}
+}
+
+.locations-description {
+	border-bottom: 1px solid #bebebe;
+	margin: 0 0 10px;
+	padding-bottom: 10px;
+}
+
+.cf-cc-autocomplete-fields-container.shown {
+	background: $color-mercury;
+	border-radius: 2px;
+	border: 1px solid #dcdcdc;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.selection-inputs-container {
+	position: relative;
+}
+
+.cf-cc-form-subgroup.page-visit-url-input {
+	display: none;
+}
+
+.url-input {
+	.cf-cc-form-subgroup.page-visit-url-input {
+		display: block!important;
+	}
+}
+
+.geo-autocomplete, .cf-page-visit-autocomplete {
+	width: 100%;
+}
+
+.select-city-container {
+	height: 26px;
+	position: relative;
+	width: 100%;
+}
+
+#geo-timezone-selection {
+	color: #787878;
+	height: 2em;
+}
+
+.autocomplete {
+	left: 0;
+	width: 100%;
+}
+
+.selection-title {
+	margin: 10px 0;
+	margin-left: 4px;
+}
+
+.or-statement {
+	font-size: 0.8em;
+	margin: 0;
+}
+
+.geo-timezone-selection {
+	height: 2em;
+	color: #787878;
+}
+
+/* Statistics */
+
+.statistics_wrapper {
+	width: 80%;
+}
+
+.version_statistics {
+	padding-top: 10px;
+}
+
+.version_statistics_title {
+	border-bottom: 1px solid $color-mercury;
+	height: 1.5em;
+	text-align: center;
+
+	th {
+		font-weight: normal;
+	}
+}
+
+.version_statistics {
+	.version, .statistics {
+		padding: 8px 5px;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+
+.rese_action {
+	text-align: center;
+}
+
+.reset_version_action {
+	color: #d25236;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+
+#analytics-refresh-views {
+	cursor: pointer;
+}
+
+.analytics-loading-container {
+	background: rgba(220, 220, 220, 0.5);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.refreshIcon {
+	background: $color-alabaster;
+	border-radius: 50%;
+	border: 1px solid #d8d8d8;
+	color: $color-cerulean;
+	font-size: 1em;
+	margin-left: 5px;
+	padding: 3px;
+}
+
+/* Spinner CSS + Animations */
+
+.loading-spinner {
+	animation: sk-scaleout 1.0s infinite ease-in-out;
+	background-color: #333;
+	border-radius: 100%;
+	height: 40px;
+	margin: 100px auto;
+	width: 40px;
+}
+
+
+@keyframes sk-scaleout {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+/* General css corresponds geolocation */
+
+.hide-field {
+	display: none;
+}
+
+.ifcf-ccso-input-autocomplete {
+	width: 100%;
+}
+
+.cf-cc-autocomplete-container {
+	display: none;
+	float: left;
+	width: 100%;
+
+	input, select {
+		margin-left: 8%;
+		width: 92%;
+	}
+}
+
+.cf-cc-autocomplete-wrapper {
+	line-height: 1.7;
+}
+
+.cf-cc-geo-selected {
+	display: block !important;
+	margin: 6px 0;
+}
+
+input.cf-cc-autocomplete-opener {
+	margin-top: 0;
+}
+
+
+/* Settings Page related CSS - Begin */
+
+.cf-cc-info-title {
+	padding: 15px 0 20px !important;
+}
+
+.cf-cc-info-tab-wrapper {
+	.cf-cc-general-info-wrapper, .geolocation-info-wrapper {
+		font-size: 14px;
+		line-height: 1.7;
+		max-width: 1020px;
+	}
+}
+
+/*View Trigger page */
+
+.version-symbol {
+	border-bottom: 1px solid #e1e1e1;
+	border-top: 1px solid #e1e1e1;
+	text-align: left;
+}
+
+.version-content {
+	margin: 30px 0;
+}
+
+.cf-cc-primary-lang-checkbox {
+	float: left;
+	margin: 0 5px 0 0 !important;
+}
+
+.cf-cc-primary-lang-container {
+	float: left;
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 0;
+	margin-top: 10px;
+}
+
+/* Settings Page related CSS - End */
+
+#cf-cc-modal-first-use {
+	display: none;
+}
+
+.cf-cc-form-group,
+.cf-cc-form-subgroup {
+	margin-bottom: 15px;
+
+	&:empty {
+		display: none;
+	}
+
+	&.hide-group {
+		height: 0;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		width: 0;
+	}
+}
+
+/* Settings Page Related Rules */
+
+.cf-cc_settings_page_option {
+	width: 30px;
+}
+
+.rule-wrap .datetimepickercustom-.cfdatetimepicker {
+	padding-left: 30px;
+}
+
+#wpcontent .cf-cc-admin-toolbar {
+	align-items: center;
+	background: #fff;
+	border-bottom: 1px solid #ccd0d4;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	margin-left: -20px;
+	padding: 15px 20px;
+}
+
+.cf-cc-admin-toolbar h2 {
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: 40px;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 2.57143;
+	margin: 0 10px 0 0;
+	padding-left: 55px;
+}
+.cf-cc-admin-toolbar-copy {
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	margin-top: -15px;
+
+	@media screen and (min-width: 426px) {
+		display: inline-block;
+		margin-top: auto;
+	}
+}
+
+body .wrap .cftitle {
+	margin: 15px 0;
+	padding: 0;
+}
+
+.cf-cc-body {
+	border: 1px solid #DDDDDD;
+
+	> p,
+	> ul,
+	> dl {margin-left: 3em;}
+
+	p,
+	li,
+	dt,
+	dd {
+		font-size: 1.04em;
+		line-height: 150%;
+		max-width: 42em;
+	}
+	form,
+	.form-table {
+		font-size: 14px;
+		max-width: 52em;
+
+		textarea {
+			width: 100%;
+		}
+
+		p,
+		li,
+		dt,
+		dd {
+			font-size: 1.0em;
+		}
+
+		.accordion-container {
+			th {
+				display: none;
+			}
+			td {
+				padding: 0;
+			}
+		}
+	}
+
+	h2 {
+		margin-top: 1.5em;
+	}
+	dt {
+		font-weight: 700;
+	}
+	dd {
+		font-style: italic;
+		margin-bottom: 1.25em;
+	}
+
+	main {
+		background-color: #fff;
+		padding: 20px;
+
+		h2 {
+			&:first-of-type {
+				margin-top: 0;
+			}
+		}
+	}
+}
+.cc-upsell-banner {
+	background: white;
+	border-left: 5px solid red;
+	margin: 10px 0;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	& .content {
+		width: 80%;
+	}
+	& .cta {
+		padding: 10px;
+		& img {
+			height: auto;
+			width: 50px;
+		}
+	}
+	h2, p {
+		margin: 0.5em 0;
+	}
+}

@@ -1,0 +1,593 @@
+# Copyright (C) 2020 Crowd Favorite
+# This file is distributed under the same license as the Conditional Content by Crowd Favorite plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Conditional Content by Crowd Favorite 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/conditional-content-cf-lite\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-08-28T18:51:41+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: cf-conditional-content\n"
+
+#. Plugin Name of the plugin
+msgid "Conditional Content by Crowd Favorite"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://crowdfavorite.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "Display page sections and widgets based on configurable visibility rules."
+msgstr ""
+
+#. Author of the plugin
+msgid "Crowd Favorite"
+msgstr ""
+
+#: admin/class-admin.php:224
+msgid "This query string is already in use with the current trigger."
+msgstr ""
+
+#: admin/class-admin.php:228
+msgid "It is not possible to create two query strings with the same name. If you publish now, the second version will be deleted."
+msgstr ""
+
+#: admin/class-adminconditions.php:91
+#: admin/class-adminconditions.php:197
+msgid "Conditions"
+msgstr ""
+
+#: admin/class-adminconditions.php:162
+#: admin/views/conditions.php:61
+msgid "Chose a condition to create a rule:"
+msgstr ""
+
+#: admin/class-adminconditions.php:196
+msgid "Title"
+msgstr ""
+
+#: admin/class-adminconditions.php:208
+msgid "Date"
+msgstr ""
+
+#: admin/class-adminconditions.php:321
+msgid "Blank"
+msgstr ""
+
+#: admin/class-adminconditions.php:334
+msgid "Custom URL"
+msgstr ""
+
+#: admin/class-adminconditions.php:357
+msgid "You do not have sufficient privilege to edit the post"
+msgstr ""
+
+#: admin/class-adminsettings.php:72
+msgid "Minutes"
+msgstr ""
+
+#: admin/class-adminsettings.php:73
+msgid "Hours"
+msgstr ""
+
+#: admin/class-adminsettings.php:74
+msgid "Days"
+msgstr ""
+
+#: admin/class-adminsettings.php:75
+msgid "Weeks"
+msgstr ""
+
+#: admin/class-adminsettings.php:76
+msgid "Months"
+msgstr ""
+
+#: admin/class-adminsettings.php:124
+#: admin/class-adminsettings.php:125
+msgid "Settings"
+msgstr ""
+
+#: admin/views/conditions.php:20
+msgid "Select a condition"
+msgstr ""
+
+#: admin/views/conditions.php:25
+#: admin/views/conditions.php:79
+msgid "Device"
+msgstr ""
+
+#: admin/views/conditions.php:29
+#: admin/views/conditions.php:89
+msgid "User Behavior"
+msgstr ""
+
+#: admin/views/conditions.php:33
+#: admin/views/conditions.php:94
+msgid "Referrer Source"
+msgstr ""
+
+#: admin/views/conditions.php:37
+#: admin/views/conditions.php:99
+msgid "Dynamic Link"
+msgstr ""
+
+#: admin/views/conditions.php:41
+#: admin/views/conditions.php:104
+msgid "Time & Date"
+msgstr ""
+
+#: admin/views/conditions.php:45
+#: admin/views/conditions.php:109
+msgid "Visited Pages"
+msgstr ""
+
+#: admin/views/conditions.php:50
+#: admin/views/conditions.php:121
+msgid "Geolocation"
+msgstr ""
+
+#: admin/views/conditions.php:73
+msgid "Select a Condition"
+msgstr ""
+
+#: admin/views/conditions.php:149
+msgid "https://your-referrer.com"
+msgstr ""
+
+#: admin/views/conditions.php:178
+msgid "This condition uses your website's time settings"
+msgstr ""
+
+#: admin/views/conditions.php:199
+msgid "Start displaying content from:"
+msgstr ""
+
+#: admin/views/conditions.php:211
+msgid "Stop displaying content from:"
+msgstr ""
+
+#: admin/views/conditions.php:278
+#: admin/views/conditions.php:279
+msgid "Have a question or need help? Get in touch with us!"
+msgstr ""
+
+#: admin/views/partials/field-compare-url.php:15
+msgid "Name your query string"
+msgstr ""
+
+#: admin/views/partials/field-compare-url.php:22
+msgid "Add the following string to the end of your page URL to display the content:"
+msgstr ""
+
+#. Translators: %s - query string value.
+#: admin/views/partials/field-compare-url.php:37
+msgid "I.e., www.url.com?v=%s"
+msgstr ""
+
+#: admin/views/partials/field-compare-url.php:50
+msgid "Add the following parameter at the end of the page URL"
+msgstr ""
+
+#: admin/views/partials/field-compare-url.php:62
+msgid "I.e., www.url.com?v=your-query-string"
+msgstr ""
+
+#: admin/views/partials/field-end-date.php:27
+#: admin/views/partials/field-start-date.php:24
+msgid "Click to pick a Date"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:20
+msgid "Targeted locations:"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:63
+msgid "Select a location"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:68
+msgid "Add another location"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:79
+msgid "Country"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:82
+msgid "Country (start typing)"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:94
+msgid "City"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:99
+msgid "City (start typing)"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:109
+msgid "State"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:113
+msgid "State (start typing)"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:125
+msgid "Zip Code / Postal Code"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:130
+#: admin/views/partials/field-geolocation.php:132
+msgid "Postal Code"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:139
+msgid "Add Postal Code"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:152
+msgid "Available only for WP Engine provider"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:161
+#: admin/views/partials/field-geolocation.php:169
+msgid "Area Code"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:166
+msgid "Area code"
+msgstr ""
+
+#: admin/views/partials/field-geolocation.php:174
+msgid "Add Area Code"
+msgstr ""
+
+#: admin/views/partials/field-operator.php:13
+#: admin/views/partials/field-page-visit.php:103
+msgid "URL Is"
+msgstr ""
+
+#: admin/views/partials/field-operator.php:16
+#: admin/views/partials/field-page-visit.php:106
+msgid "URL Is Not"
+msgstr ""
+
+#: admin/views/partials/field-page-select.php:13
+msgid "Select page"
+msgstr ""
+
+#: admin/views/partials/field-page-visit.php:22
+msgid "This version will be displayed if the visitor has visited one of the following pages in the last"
+msgstr ""
+
+#: admin/views/partials/field-page-visit.php:82
+msgid "Enter the URL of the visited pages you would like the content applied."
+msgstr ""
+
+#: admin/views/partials/field-page-visit.php:86
+msgid "Add another page"
+msgstr ""
+
+#: admin/views/partials/field-page-visit.php:99
+#: admin/views/partials/field-time-date-schedule-select.php:15
+#: admin/views/partials/field-trigger-select.php:19
+#: admin/views/partials/field-user-behavior.php:21
+msgid "Choose an option"
+msgstr ""
+
+#: admin/views/partials/field-page-visit.php:118
+msgid "Press the ENTER key to add the URL to the URLs list."
+msgstr ""
+
+#: admin/views/partials/field-time-date-schedule-select.php:20
+msgid "Start/End Date"
+msgstr ""
+
+#: admin/views/partials/field-trigger-select.php:11
+msgid "Select the referral source in which you would like the rule to apply, additional options are available based on the selected user behavior."
+msgstr ""
+
+#: admin/views/partials/field-trigger-select.php:24
+msgid "URL"
+msgstr ""
+
+#: admin/views/partials/field-trigger-select.php:28
+msgid "Page on your website"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-device.php:17
+msgid "Select the device(s) in which you would like the content to appear."
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-device.php:25
+msgid "Mobile"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-device.php:33
+msgid "Tablet"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-device.php:41
+msgid "Desktop"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-logged.php:13
+#: includes/class-elementorconditions.php:65
+msgid "Yes"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-logged.php:16
+#: includes/class-elementorconditions.php:66
+msgid "No"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-returning-custom.php:19
+msgid "Choose no. of visits"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-returning.php:13
+msgid "Show this content after:"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-returning.php:26
+msgid "First Visit"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-returning.php:33
+msgid "2 Visits"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-returning.php:40
+msgid "3 Visits"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior-returning.php:45
+msgid "Custom"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior.php:12
+msgid "Select the user behavior in which you would like the rule to apply, additional options are available based on the selected user behavior."
+msgstr ""
+
+#: admin/views/partials/field-user-behavior.php:26
+msgid "Logged In"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior.php:31
+msgid "New Visitor"
+msgstr ""
+
+#: admin/views/partials/field-user-behavior.php:36
+msgid "Returning Visitor"
+msgstr ""
+
+#: admin/views/settings-page.php:28
+msgid "Upgrade to Conditional Content Pro"
+msgstr ""
+
+#: admin/views/settings-page.php:30
+msgid "Looking for additional functionality including rulesets, multiple geolocation providers, advanced conditions like time scheduling and more? Check out our premium licenses."
+msgstr ""
+
+#: admin/views/settings-page.php:37
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: admin/views/settings-page.php:42
+msgid "Conditional Content Settings"
+msgstr ""
+
+#: admin/views/settings-page.php:54
+msgid "GENERAL SETTINGS"
+msgstr ""
+
+#: admin/views/settings-page.php:59
+msgid "Visited pages tracking duration"
+msgstr ""
+
+#: admin/views/settings-page.php:80
+msgid "The duration used by the 'visited pages' condition to track users visits."
+msgstr ""
+
+#: admin/views/settings-page.php:90
+msgid "Remove data on uninstall?"
+msgstr ""
+
+#: admin/views/settings-page.php:102
+msgid "Check this box if you would like Conditional Content to completely remove all of its data when the plugin is deleted."
+msgstr ""
+
+#: admin/views/settings-page.php:112
+msgid "Lazy load content?"
+msgstr ""
+
+#: admin/views/settings-page.php:124
+msgid "Check this box if you would like Conditional Content to load the content asynchronously."
+msgstr ""
+
+#: admin/views/settings-page.php:134
+msgid "GeoIP Provider"
+msgstr ""
+
+#: admin/views/settings-page.php:139
+msgid "Do not use geolocation"
+msgstr ""
+
+#. Translators: %1$s - Documentation URL.
+#: admin/views/settings-page.php:155
+msgid "To use WP Engine as a GeoIP provider please consult the documentation available at %1$s."
+msgstr ""
+
+#: admin/views/settings-page.php:179
+msgid " API key"
+msgstr ""
+
+#. Translators: %1$s - GeoIP Provider URL.
+#: admin/views/settings-page.php:204
+msgid "Please visit the provider's website available at %1$s in order to obtain an API key."
+msgstr ""
+
+#: admin/views/settings-page.php:218
+msgid "Google Maps API Key"
+msgstr ""
+
+#: admin/views/settings-page.php:232
+msgid "An API key is required to use autocomplete suggestions for geolocation conditions."
+msgstr ""
+
+#: compatibility.php:157
+msgid "Oops! It looks like you have another version of this plugin already active. Please disable the other versions before retrying activation."
+msgstr ""
+
+#: includes/class-bbconditions.php:110
+#: includes/class-elementorconditions.php:321
+msgid "Personalization"
+msgstr ""
+
+#: includes/class-bbconditions.php:113
+msgid "Visibility Rules"
+msgstr ""
+
+#: includes/class-bbconditions.php:117
+#: includes/class-elementorconditions.php:329
+msgid "Enable Personalization"
+msgstr ""
+
+#: includes/class-bbconditions.php:130
+msgid "Available Conditions"
+msgstr ""
+
+#: includes/class-bbconditions.php:134
+#: includes/class-elementorconditions.php:348
+msgid "Selected Condition"
+msgstr ""
+
+#: includes/class-bbconditions.php:160
+msgid "Beaver Builder Missing"
+msgstr ""
+
+#. Translators: %1$s - Plugin name, %2$s - "PHP", %3$s - Required PHP version.
+#: includes/class-cfconditionalcontent.php:79
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:81
+msgid "PHP"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:185
+msgctxt "condition"
+msgid "Add New"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:186
+msgid "Add Condition"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:187
+msgid "All Conditions"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:188
+msgid "Edit Condition"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:189
+msgctxt "admin menu"
+msgid "Conditions"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:190
+msgctxt "post type general name"
+msgid "Conditions"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:191
+msgid "New Condition"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:192
+msgid "No Conditions found"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:193
+msgid "No Conditions found in the Trash"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:195
+msgid "Search Conditions"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:196
+msgctxt "post type singular name"
+msgid "Condition"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:197
+msgid "View Condition"
+msgstr ""
+
+#: includes/class-cfconditionalcontent.php:202
+msgid "CF Conditional Content - Conditions"
+msgstr ""
+
+#: includes/class-conditionspreview.php:169
+msgid "Conditions Preview"
+msgstr ""
+
+#: includes/class-conditionspreview.php:171
+msgid "View existing conditions on page"
+msgstr ""
+
+#: includes/class-conditionspreview.php:191
+msgid "No conditions found on this page"
+msgstr ""
+
+#: includes/class-conditionspreview.php:194
+msgid "No conditions for this page"
+msgstr ""
+
+#: includes/class-conditionspreview.php:216
+#: includes/class-conditionspreview.php:220
+msgid "Reset Rules"
+msgstr ""
+
+#: includes/class-conditionspreview.php:392
+msgid "Active by default"
+msgstr ""
+
+#: includes/class-conditionspreview.php:397
+msgid "Inactive by default"
+msgstr ""
+
+#: public/class-cf-cc-public.php:424
+msgid "Post not found."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:15
+msgid "crowdfavorite"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:16
+msgid "conditional"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:29
+msgid "None"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:64
+msgid "Conditional Content"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:68
+msgid "Applied Condition"
+msgstr ""

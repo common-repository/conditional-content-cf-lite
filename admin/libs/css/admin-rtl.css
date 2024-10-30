@@ -1,0 +1,80 @@
+/**
+ *	RTL ovveride
+ */
+
+@media (min-width: 992px) {
+	.col-md-6, .col-md-12, .col-lg-3, .col-lg-9 {
+		float: right;
+	}
+}
+.fa-play {
+transform: rotate(-180deg);
+    margin-left: 0;
+    margin-right: 6px;
+	}
+
+.remove-autocomplete {
+    left: 0;
+    right: unset;
+}
+
+.locked-condition-box-container {
+
+    margin-bottom: 0 !important;
+
+}
+
+.cf-cc-btn-drag {
+	border-right: 1px solid #dedfe0;
+    float: left;
+    border-left: 0;
+}
+.cf-cc-tipGrey {
+	margin-left:0;
+	margin-right:5px;
+}
+
+.flag{
+	margin-left:5px;
+	margin-right:0;
+}
+
+
+/*//-------------------------------------*/
+
+.btn-delete {
+    float: left;
+	border-left: none;
+	border-right: 1px solid #dedfe0;
+}
+
+input.form-control.deviceformcontrol {
+    float: right;
+	margin: 4px 0 0 5px;
+}
+
+
+.version-count {
+	margin-right: 0;
+    margin-left: 1em;
+}
+
+tr.type-cf_cc_condition .column-condition {
+	text-align: right;
+}
+
+.cf-cc-tm-section .text {
+    float: left;
+    margin-right: 5px;
+	margin-left:0;
+}
+
+.cf-cc-tm-section .tm-tip {
+    float: left;
+    margin-right: 5px;
+}
+
+.cf-cc-tm-section .circle {
+    float: left;
+ }
+

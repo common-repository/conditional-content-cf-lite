@@ -1,0 +1,3 @@
+<?php
+
+// Personalization is awesome!

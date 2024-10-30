@@ -1,0 +1,13 @@
+$triggers: 'user-behavior-logged-selection', 'referrer-selection', 'referrer-custom', 'url-custom', 'page-selection', 'custom-url-display', 'ab-testing-custom', 'User-Behavior', 'user-behavior-returning', 'user-behavior-retn-custom', 'user-behavior-selection', 'time-date-selection', 'schedule-selection', 'times-dates-schedules-selections', 'time-date-pick-start-date', 'time-date-pick-end-date', 'user-behavior-loggedinout', 'user-behavior-browser-language', 'user-behavior-device', 'common-referrers', 'locked-box', 'page-visit-selection', 'page-url-selection', 'page-url-custom', 'geolocation-selection', 'custom-selection';
+
+@each $trigger in $triggers {
+	*[data-field="#{$trigger}"] {
+		display: none;
+	}
+
+	.#{$trigger} {
+		*[data-field="#{$trigger}"] {
+			display: block;
+		}
+	}
+}
